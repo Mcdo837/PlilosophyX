@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Qoutes Generator</title>
+    <link rel="stylesheet" href="quotes.css">
+</head>
+<body>
+    <header>
+     <h1 class="logo">Philosophical Quotes</h1>
+    </header>
+    <main>
+        <div class="hero-section">
+            <div>
+            <h1>"Find Quotes That May Inspire You"</h1>
+            </div>
+            <div class="bluh">
+            <h2>Written By Some Of The Greates Thinkers</h2>
+            </div>
+        </div>
+
+    <div class="spliter">
+        <h3 class="splited">Quotes</h3>
+    </div>
+
+    <div class="quotes-container"></div>
+    <div class="like-dislike-container"></div>
+    <div class="likes-container">
+        <button class="like-button" onclick="like();">Like</button>
+        <button class="dislike-button" onclick="dislike()">Dislike</button>
+    </div>
+    </main>
+    <footer class="site-footer" role="contentinfo">
+      <div class="container">
+        <p class="footer-text">© <span id="current-year"></span> — Created by <strong>Krypto Code</strong></p>
+      </div>
+    </footer>
+    <script src="qoutes-data.js"></script>
+    <script src="qoutes.js"></script>
+    <script>
+      // keep footer year up-to-date
+      document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
